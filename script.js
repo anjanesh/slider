@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded", function(event)
     
     var nav =
     {
-        timer1 : null,
-        timer2 : null,
-        speed : 75,
-        interval : 5,
-        moveCount : 0,
-        marginLeft : 0,
+        timer1: null,
+        timer2: null,
+        timer3: null,
+        speed: 75,
+        interval: 5,
+        moveCount: 0,
+        marginLeft: 0,
         
         init : function()
         {        
