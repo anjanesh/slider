@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Image Slider</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(event)
+{    
+    document.querySelector("#nav > ul").addEventListener('click', function(event)
+    {
+        switch(event.target.nodeName.toLowerCase())
+        {
+            case "img":
+            document.getElementById("full-image").innerHTML = '<img src="images/nature/full/' + event.target.parentElement.getAttribute("data-code") + '.jpg" />';
+            break;
+        }
+    }, false);
+});  
+</script>
+</head>
+<body>
+<div id="container">
+    <div id="full-image">
+    </div>
+    <div class="block" id="nav-container">
+      <button id="nav-prev" class="left">&lt;&lt;</button>
+      <button id="nav-left" class="left">&lt;</button>
+      <button id="nav-next" class="right">&gt;&gt;</button>
+      <button id="nav-right" class="right">&gt;</button>
+      <div id="nav" class="left">
+          <ul>
+              <li data-code='0'><img src="images/nature/100x100/0.jpg" /></li>
+              <li data-code='1'><img src="images/nature/100x100/1.jpg" /></li>
+              <li data-code='2'><img src="images/nature/100x100/2.jpg" /></li>              
+              <li data-code='3'><img src="images/nature/100x100/3.jpg" /></li>
+              <li data-code='4'><img src="images/nature/100x100/4.jpg" /></li>
+              <li data-code='5'><img src="images/nature/100x100/5.jpg" /></li>
+              <li data-code='6'><img src="images/nature/100x100/6.jpg" /></li>
+              <li data-code='7'><img src="images/nature/100x100/7.jpg" /></li>
+              <li data-code='8'><img src="images/nature/100x100/8.jpg" /></li>
+              <li data-code='9'><img src="images/nature/100x100/9.jpg" /></li>              
+              <li data-code='10'><img src="images/nature/100x100/10.jpg" /></li>
+              <li data-code='11'><img src="images/nature/100x100/11.jpg" /></li>
+              <li data-code='12'><img src="images/nature/100x100/12.jpg" /></li>              
+              <li data-code='13'><img src="images/nature/100x100/13.jpg" /></li>
+              <li data-code='14'><img src="images/nature/100x100/14.jpg" /></li>
+              <li data-code='15'><img src="images/nature/100x100/15.jpg" /></li>
+              <li data-code='16'><img src="images/nature/100x100/16.jpg" /></li>
+          </ul>
+      </div>
+      <div class="clear"></div>
+    </div>    
+</div>
+</body>
+</html>
