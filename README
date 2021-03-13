@@ -2,5 +2,5 @@ This is a vanilla JavaScript based image slider.
 
 This my sound like "another image slider" but this is a bit unlike others with respect to navigation. There are two more navigation buttons to fast scroll left and right.
 
-I inititially wrote this code in 2011 based on jQuery 1.6.4. I edited it to remove jQuery but did not clean up the code to readability. I hope to do it soon.
+I inititially wrote this code in 2011 based on jQuery 1.6.4. I edited it to remove jQuery but did not clean up the code for readability. I hope to do it soon.
 
